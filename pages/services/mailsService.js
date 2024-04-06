@@ -1,4 +1,7 @@
-var nodemailer = require("nodemailer");
+if (typeof window === 'undefined') {
+  const nodemailer = require('nodemailer');
+  // Server-side code using nodemailer
+}
 
 export async function sendMail({
   subject,
