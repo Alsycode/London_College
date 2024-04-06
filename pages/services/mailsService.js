@@ -1,8 +1,5 @@
-if (typeof window === 'undefined') {
-  const nodemailer = require('nodemailer');
-  // Server-side code using nodemailer
-}
-import React from 'react';
+var nodemailer = require("nodemailer");
+
 export async function sendMail({
   subject,
   toEmail,
